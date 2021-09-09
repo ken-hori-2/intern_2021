@@ -19,17 +19,17 @@ rosbag play --clock stereo_outdoorB.bag
 
 #gazebo
 (flame:map)
-roslaunch visual_test DEMO.launch
-roslaunch visual_test rtab_mighty2_navi.launch
+roslaunch intern_2021 DEMO.launch
+roslaunch intern_2021 rtab_mighty2_navi.launch
 
-roslaunch visual_test rtab_mighty2_navi_cam_lidar.launch 
+roslaunch intern_2021 rtab_mighty2_navi_cam_lidar.launch 
 
 #############################
 1.
-roslaunch visual_test rtab_mighty2_navi.launch rgbd_odometry:=true localization:=true
+roslaunch intern_2021 rtab_mighty2_navi.launch rgbd_odometry:=true localization:=true
 
 2.
-roslaunch visual_test rtab_mighty2_navi_cam_lidar.launch rgbd_odometry:=true localization:=true
+roslaunch intern_2021 rtab_mighty2_navi_cam_lidar.launch rgbd_odometry:=true localization:=true
 
 
 
