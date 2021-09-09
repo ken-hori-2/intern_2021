@@ -1,0 +1,40 @@
+git token :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
+
+
+1.
+roslaunch rtabmap_ros demo_robot_mapping.launch
+
+rosbag play --clock demo_mapping.bag
+
+
+
+2.
+roslaunch rtabmap_ros demo_stereo_outdoor.launch
+
+roslaunch rtabmap_ros demo_stereo_outdoor.launch
+
+rosbag play --clock stereo_outdoorB.bag
+
+
+
+#gazebo
+(flame:map)
+roslaunch visual_test DEMO.launch
+roslaunch visual_test rtab_mighty2_navi.launch
+
+roslaunch visual_test rtab_mighty2_navi_cam_lidar.launch 
+
+#############################
+1.
+roslaunch visual_test rtab_mighty2_navi.launch rgbd_odometry:=true localization:=true
+
+2.
+roslaunch visual_test rtab_mighty2_navi_cam_lidar.launch rgbd_odometry:=true localization:=true
+
+
+
+#map save place
+-> /home/intern/.ros
+rtabmap-databaseViewer rtabmap.db
+rtabmap2_copy2.db
+
